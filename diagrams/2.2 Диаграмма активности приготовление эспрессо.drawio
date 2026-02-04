@@ -1,0 +1,265 @@
+<mxfile host="app.diagrams.net" modified="2024-01-01T00:00:00.000Z" agent="5.0" etag="espresso" version="21.0.0" type="device">
+  <diagram name="Диаграмма активности - Эспрессо" id="espresso-activity">
+    <mxGraphModel dx="1000" dy="1400" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1000" pageHeight="1400" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        
+        <!-- Заголовок -->
+        <mxCell id="title" value="ДИАГРАММА АКТИВНОСТИ: ПРИГОТОВЛЕНИЕ ЭСПРЕССО" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="250" y="10" width="450" height="30" as="geometry" />
+        </mxCell>
+        
+        <!-- Начало -->
+        <mxCell id="start" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="475" y="50" width="30" height="30" as="geometry" />
+        </mxCell>
+        
+        <!-- Действие: Нажата кнопка -->
+        <mxCell id="a1" value="Нажата кнопка&#xa;&quot;Эспрессо&quot;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="420" y="100" width="140" height="40" as="geometry" />
+        </mxCell>
+        
+        <!-- Действие: Подсветить кнопку -->
+        <mxCell id="a2" value="Подсветить&#xa;кнопку" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="420" y="160" width="140" height="40" as="geometry" />
+        </mxCell>
+        
+        <!-- Решение: Проверка ресурсов -->
+        <mxCell id="d1" value="" style="rhombus;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="465" y="220" width="50" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="d1_label" value="Проверка&#xa;ресурсов" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=10" vertex="1" parent="1">
+          <mxGeometry x="520" y="230" width="70" height="30" as="geometry" />
+        </mxCell>
+        
+        <!-- Ветвь: Недостаточно ресурсов -->
+        <mxCell id="a3_error" value="Вывести ошибку&#xa;на дисплей" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+          <mxGeometry x="220" y="280" width="120" height="40" as="geometry" />
+        </mxCell>
+        
+        <!-- Решение: Чашка есть? -->
+        <mxCell id="d2" value="" style="rhombus;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="465" y="290" width="50" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="d2_label" value="Чашка&#xa;есть?" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=10" vertex="1" parent="1">
+          <mxGeometry x="520" y="300" width="50" height="30" as="geometry" />
+        </mxCell>
+        
+        <!-- Действие: Вывести сообщение о чашке -->
+        <mxCell id="a4_cup" value="Вывести&#xa;&quot;Установите чашку&quot;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="1">
+          <mxGeometry x="620" y="350" width="130" height="40" as="geometry" />
+        </mxCell>
+        
+        <!-- Действие: Ожидать чашку -->
+        <mxCell id="a5_wait" value="Ожидать чашку&#xa;(таймаут 30с)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="1">
+          <mxGeometry x="620" y="410" width="130" height="40" as="geometry" />
+        </mxCell>
+        
+        <!-- Решение: Чашка установлена? -->
+        <mxCell id="d3" value="" style="rhombus;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="660" y="470" width="50" height="50" as="geometry" />
+        </mxCell>
+        
+        <!-- Действие: Запустить кофемолку -->
+        <mxCell id="a6_grind" value="Запустить&#xa;кофемолку" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="420" y="400" width="140" height="40" as="geometry" />
+        </mxCell>
+        
+        <!-- Действие: Ожидать помол -->
+        <mxCell id="a7_grind_wait" value="Ожидать помол&#xa;(7 секунд)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="420" y="460" width="140" height="40" as="geometry" />
+        </mxCell>
+        
+        <!-- Действие: Остановить кофемолку -->
+        <mxCell id="a8_grind_stop" value="Остановить&#xa;кофемолку" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="420" y="520" width="140" height="40" as="geometry" />
+        </mxCell>
+        
+        <!-- Решение: Температура OK? -->
+        <mxCell id="d4" value="" style="rhombus;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="465" y="580" width="50" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="d4_label" value="Темп.&#xa;OK?" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=10" vertex="1" parent="1">
+          <mxGeometry x="520" y="590" width="40" height="30" as="geometry" />
+        </mxCell>
+        
+        <!-- Действие: Включить нагреватель -->
+        <mxCell id="a9_heat" value="Включить&#xa;нагреватель" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="620" y="650" width="120" height="40" as="geometry" />
+        </mxCell>
+        
+        <!-- Действие: Ожидать нагрев -->
+        <mxCell id="a10_heat_wait" value="Ожидать нагрев" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="620" y="710" width="120" height="40" as="geometry" />
+        </mxCell>
+        
+        <!-- Действие: Включить помпу -->
+        <mxCell id="a11_pump" value="Включить помпу" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="420" y="710" width="140" height="40" as="geometry" />
+        </mxCell>
+        
+        <!-- Действие: Пролив воды -->
+        <mxCell id="a12_pour" value="Пролив воды&#xa;(25 секунд)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="420" y="770" width="140" height="40" as="geometry" />
+        </mxCell>
+        
+        <!-- Действие: Выключить помпу -->
+        <mxCell id="a13_pump_stop" value="Выключить помпу" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="420" y="830" width="140" height="40" as="geometry" />
+        </mxCell>
+        
+        <!-- Действие: Вывести Готово -->
+        <mxCell id="a14_done" value="Вывести&#xa;&quot;Готово!&quot;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="420" y="890" width="140" height="40" as="geometry" />
+        </mxCell>
+        
+        <!-- Точка слияния -->
+        <mxCell id="merge1" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="280" y="950" width="20" height="20" as="geometry" />
+        </mxCell>
+        
+        <!-- Действие: Погасить подсветку -->
+        <mxCell id="a15_light_off" value="Погасить&#xa;подсветку" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="220" y="1000" width="120" height="40" as="geometry" />
+        </mxCell>
+        
+        <!-- Конец -->
+        <mxCell id="end" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#000000;strokeWidth=3;" vertex="1" parent="1">
+          <mxGeometry x="265" y="1070" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="end_inner" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry x="270" y="1075" width="20" height="20" as="geometry" />
+        </mxCell>
+        
+        <!-- ===== СВЯЗИ ===== -->
+        <mxCell id="e1" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1" source="start" target="a1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e2" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1" source="a1" target="a2">
+          <mxGeometry width="50" height="50" relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e3" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1" source="a2" target="d1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e4" value="[недост.]" style="endArrow=classic;html=1;rounded=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="d1" target="a3_error">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e5" value="[OK]" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="d1" target="d2">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e6" value="[нет]" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="d2" target="a4_cup">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e7" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1" source="a4_cup" target="a5_wait">
+          <mxGeometry width="50" height="50" relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e8" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1" source="a5_wait" target="d3">
+          <mxGeometry width="50" height="50" relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e9" value="[таймаут]" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="d3">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="800" y="495" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="800" y="495" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e9b" value="" style="endArrow=classic;html=1;rounded=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" target="merge1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="800" y="495" as="sourcePoint" />
+            <mxPoint x="290" y="960" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="800" y="960" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e10" value="[да]" style="endArrow=classic;html=1;rounded=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="d3" target="a6_grind">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint as="offset" />
+            <Array as="points">
+              <mxPoint x="600" y="495" />
+              <mxPoint x="600" y="420" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e11" value="[да]" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="d2" target="a6_grind">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint as="offset" />
+            <Array as="points">
+              <mxPoint x="490" y="360" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e12" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1" source="a6_grind" target="a7_grind_wait">
+          <mxGeometry width="50" height="50" relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e13" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1" source="a7_grind_wait" target="a8_grind_stop">
+          <mxGeometry width="50" height="50" relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e14" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1" source="a8_grind_stop" target="d4">
+          <mxGeometry width="50" height="50" relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e15" value="[нет]" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="d4" target="a9_heat">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e16" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1" source="a9_heat" target="a10_heat_wait">
+          <mxGeometry width="50" height="50" relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e17" value="" style="endArrow=classic;html=1;rounded=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="a10_heat_wait" target="a11_pump">
+          <mxGeometry width="50" height="50" relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e18" value="[да]" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="d4" target="a11_pump">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint as="offset" />
+            <Array as="points">
+              <mxPoint x="490" y="660" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e19" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1" source="a11_pump" target="a12_pour">
+          <mxGeometry width="50" height="50" relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e20" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1" source="a12_pour" target="a13_pump_stop">
+          <mxGeometry width="50" height="50" relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e21" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1" source="a13_pump_stop" target="a14_done">
+          <mxGeometry width="50" height="50" relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e22" value="" style="endArrow=classic;html=1;rounded=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="a14_done" target="merge1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="350" y="910" />
+              <mxPoint x="350" y="950" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e23" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="a3_error" target="merge1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="280" y="330" />
+              <mxPoint x="150" y="330" />
+              <mxPoint x="150" y="950" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e24" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1" source="merge1" target="a15_light_off">
+          <mxGeometry width="50" height="50" relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e25" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1" source="a15_light_off" target="end">
+          <mxGeometry width="50" height="50" relative="1" as="geometry" />
+        </mxCell>
+        
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
